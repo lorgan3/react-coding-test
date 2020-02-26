@@ -12,3 +12,4 @@
 ## Technologies
 
 * **Create React app**: Used to bootstrap the project using the `typescript` template because it's easy setup and nice defaults.
+* **redux-toolkit (+ redux, react-redux)**: Used because it reduces boilerplate code when working with redux.
