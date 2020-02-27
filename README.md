@@ -1,6 +1,6 @@
 # React coding test
 
-An admin panel that allows you to view and modify customers orders.
+An admin panel that allows you to view and modify customers' orders.
 
 ## Development
 
@@ -18,6 +18,6 @@ The unexported functions are only there to emulate a real api and can be safely 
 
 ## Technologies
 
-* **Create React app**: Used to bootstrap the project using the `typescript` template because it's easy setup and nice defaults.
+* **Create React app**: Used to bootstrap the project using the `typescript` template because of its easy setup and nice defaults.
 * **redux-toolkit (+ redux, react-redux, redux-mock-store)**: Used because it reduces boilerplate code when working with redux.
 * **react-router-dom**: Used to provide simple routing from the summary to the detail pages.
