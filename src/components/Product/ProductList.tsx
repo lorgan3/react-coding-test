@@ -20,7 +20,7 @@ export default function ProductList(props: Props) {
 
   return (
     <div className="ProductList">
-      <h3>Products</h3>
+      <h3>Products:</h3>
       <div className="ProductList_container">
         {Object.values(products).map(product => (
           <ProductDisplay
