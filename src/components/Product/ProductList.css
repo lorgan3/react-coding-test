@@ -1,0 +1,16 @@
+.ProductDisplay {
+  width: 400px;
+  padding: 10px 20px;
+  margin: 20px;
+  border: 1px solid #999;
+}
+
+.ProductDisplay ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ProductList_container {
+  display: flex;
+  flex-wrap: wrap;
+}
