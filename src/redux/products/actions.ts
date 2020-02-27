@@ -6,10 +6,13 @@ export const productsLoading = createAction("products/loading");
 
 export interface ProductsLoaded {
   products?: Product[];
-  error?: Error;
+  error?: string;
 }
 export const productsLoaded = createAction<ProductsLoaded>("products/loaded");
 
+/**
+ * Fetch all products asynchronously.
+ */
 export const loadProducts = () => async (dispatch: StoreDispatch) => {
   dispatch(productsLoading());
 
@@ -21,6 +24,6 @@ export const loadProducts = () => async (dispatch: StoreDispatch) => {
       })
     );
   } catch (error) {
-    dispatch(productsLoaded({ error }));
+    dispatch(productsLoaded({ error: error.message }));
   }
 };

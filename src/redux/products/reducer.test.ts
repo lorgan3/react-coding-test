@@ -9,14 +9,12 @@ describe("Product reducer", () => {
     price: "1"
   };
 
-  const mockError = new Error("Error!");
-
   it("Starts loading when productsLoading is dispatched", () => {
     expect(productReducer(initialState, productsLoading()).loading).toEqual(
       true
     );
   });
-  
+
   it("Adds the products when productsLoaded succeeds", () => {
     const { loading, products } = productReducer(
       { ...initialState, loading: true },
@@ -24,16 +22,16 @@ describe("Product reducer", () => {
     );
 
     expect(loading).toEqual(false);
-    expect(products).toEqual([product]);
+    expect(products).toEqual({ "1": product });
   });
 
-  it("Adds the error when productsLoaded succeeds", () => {
+  it("Adds the error when productsLoaded fails", () => {
     const { loading, error } = productReducer(
       { ...initialState, loading: true },
-      productsLoaded({ error: mockError })
+      productsLoaded({ error: "Error!" })
     );
 
     expect(loading).toEqual(false);
-    expect(error).toEqual(mockError);
+    expect(error).toEqual("Error!");
   });
 });
