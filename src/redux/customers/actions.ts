@@ -1,5 +1,5 @@
 import { createAction } from "@reduxjs/toolkit";
-import { fetchCustomers } from "../../Api";
+import { fetchCustomers } from "../../api";
 import { StoreDispatch } from "..";
 
 export const customersLoading = createAction("customers/loading");

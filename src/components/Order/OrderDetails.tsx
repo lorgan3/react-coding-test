@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { loadOrder, orderUpdate } from "../../redux";
 import { RootState } from "../../redux";
 import ItemRow from "./ItemRow";
-import { placeOrder, addOrderProduct } from "../../Api";
+import { placeOrder, addOrderProduct } from "../../api";
 import ProductList from "../Product/ProductList";
 import "./OrderDetails.css";
 

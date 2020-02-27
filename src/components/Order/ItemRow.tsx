@@ -1,7 +1,7 @@
 import React, { useCallback } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../../redux";
-import { deleteOrderProduct } from "../../Api";
+import { deleteOrderProduct } from "../../api";
 import { orderUpdate } from "../../redux";
 
 interface Props {

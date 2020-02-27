@@ -1,12 +1,11 @@
 import React from "react";
-import { render, fireEvent } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import { Provider } from "react-redux";
 import App from "./App";
 import configureMockStore from "redux-mock-store";
 import thunk from "redux-thunk";
-import waitForExpect from "wait-for-expect";
 
-jest.mock("../Api");
+jest.mock("../api");
 
 describe("CustomerList", () => {
   const mockStore = configureMockStore([thunk]);

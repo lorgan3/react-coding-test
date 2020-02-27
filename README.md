@@ -13,7 +13,7 @@ An admin panel that allows you to view and modify customers orders.
 
 ## Plugging in a real API
 
-All network related actions are placed in `Api.ts`. The content of every exported function can be replaced with a network call (with `fetch` for example) to an api that performs the same action.
+All network related actions are placed in `api.ts`. The content of every exported function can be replaced with a network call (with `fetch` for example) to an api that performs the same action.
 The unexported functions are only there to emulate a real api and can be safely removed.
 
 ## Technologies
