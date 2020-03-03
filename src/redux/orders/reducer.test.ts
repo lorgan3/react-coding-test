@@ -4,7 +4,7 @@ import { orderLoaded, orderLoading, orderUpdate } from "./actions";
 describe("Order reducer", () => {
   const customerId = "1";
   const order: Order = {
-    id: "1",
+    id: "2",
     "customer-id": customerId,
     items: [],
     total: "0"

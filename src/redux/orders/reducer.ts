@@ -48,7 +48,11 @@ export const orderReducer = createReducer(initialState, builder => {
       ...state,
       orders: {
         ...state.orders,
-        [order.id]: { loading: false, data: order, error: undefined }
+        [order["customer-id"]]: {
+          loading: false,
+          data: order,
+          error: undefined
+        }
       }
     };
   });
